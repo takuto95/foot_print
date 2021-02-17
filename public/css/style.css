@@ -1,0 +1,63 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css');
+
+
+header{
+  background-color: red;
+}
+
+footer{
+  height: 50px;
+  font-size:15px;
+  background-color:red;
+  color: white;
+}
+
+.my-navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-image{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.nav-image ul{
+  list-style: none;
+}
+
+.nav-image span{
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 30px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  text-align: center;
+  background: #d7ebfe;
+  width: 60%;
+}
+
+.nav-image span:after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #d7ebfe;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3),
+.table td:nth-child(4) {
+  white-space: nowrap;
+  width: 1px;
+}
+
+.form-control[disabled],
+.form-control[readonly] {
+  background-color: #fff;
+}
