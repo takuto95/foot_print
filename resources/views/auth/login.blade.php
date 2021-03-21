@@ -1,39 +1,33 @@
 @extends('layout')
 
 @section('content')
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col col-md-offset-3 col-md-6">
-        <nav class="panel panel-default">
-          <div class="panel-heading">ログイン</div>
-          <div class="panel-body">
-            @if($errors->any())
-              <div class="alert alert-danger">
-                @foreach($errors->all() as $message)
-                  <p>{{ $message }}</p>
-                @endforeach
-              </div>
+    <div class="card bg-light mb-3 mx-auto" style="width: 85%;">
+        <div class="card-header">ログイン</div>
+        <div class="card-body">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    @foreach ($errors->all() as $message)
+                        <p>{{ $message }}</p>
+                    @endforeach
+                </div>
             @endif
             <form action="{{ route('login') }}" method="POST">
-              @csrf
-              <div class="form-group">
-                <label for="email">メールアドレス</label>
-                <input type="text" class="form-control" id="email" name="email" value="{{ old('email') }}" />
-              </div>
-              <div class="form-group">
-                <label for="password">パスワード</label>
-                <input type="password" class="form-control" id="password" name="password" />
-              </div>
-              <div class="text-right">
-                <input type="submit" class="btn btn-primary" />
-              </div>
+                @csrf
+                <div class="form-group">
+                    <label for="exampleInputEmail1">メールアドレス</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">パスワード</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password"
+                        placeholder="Password">
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary">ログイン</button>
+                </div>
             </form>
-          </div>
-        </nav>
-        <div class="text-center">
-          <a href="{{ route('password.request') }}">パスワードの変更はこちらから</a>
+            <div class="text-center">
+                <a href="{{ route('password.request') }}">パスワードの変更はこちらから</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-@endsection
+    @endsection
