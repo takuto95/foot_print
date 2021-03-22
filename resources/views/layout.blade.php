@@ -10,14 +10,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top ">
-            <a class="navbar-brand" href="/">
-                <img src="image/footprintslogo.png" width="150" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+            <a class="navbar-brand" href="/"><img
+                    src="<?php echo asset('image/footprintslogo.png'); ?>" width="150"
+                    alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
