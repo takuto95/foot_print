@@ -2,7 +2,7 @@
 
 @section('content')
   @if(Auth::check())
-    <div class="card-deck mx-3">
+    <div class="card-deck mx-3 mt-3">
       <div class="card">
         <div class="card-header">
           <h4>{{ Auth::user()->name }}さん。ようこそ！</h4>
