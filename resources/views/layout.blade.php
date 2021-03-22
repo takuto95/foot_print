@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
             <a class="navbar-brand" href="/"><img
-                    src="<?php echo asset('image/footprintslogo.png'); ?>" width="150"
+                    src="<?php echo asset('image/FootPrintslogo.png'); ?>" width="150"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
