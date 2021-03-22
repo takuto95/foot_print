@@ -59,7 +59,7 @@ class User extends Authenticatable
 
     public function report_contents()
     {
-        return $this->hasOne('App\ReportContent');
+        return $this->hasMany('App\ReportContent');
     }
 
     public function companies()

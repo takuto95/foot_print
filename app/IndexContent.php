@@ -8,6 +8,6 @@ class IndexContent extends Model
 {
   public function index_statuses()
   {
-      return $this->hasMany('App\IndexStatus');
+      return $this->hasOne('App\IndexStatus');
   }
 }

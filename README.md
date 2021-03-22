@@ -1,78 +1,220 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+![FootPrints](public/image/FootPrintslogo_read.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# FootPrints						
+### 概要
+<div>目標を達成するための逆算型タスク管理アプリです。</div>
+  <div>FootPrintsでは以下３つの機能を提供し、目標達成の手助けをします。</div>
+    <dl>
+      <dt>目標の可視化をします</dt>
+      <dd>会社・チーム・個人の3つ目標を作成できます。個人目標は目標の他に期日や目標達成するために必要な3つの方針を決めることができ、目標達成の明確化を図ります。</dd>
+      <dt>目標までの足跡タスクを付けられます</dt>
+      <dd>足跡の追加で目標までの進捗を確認できます。足跡一覧でタスクを管理します。</dd>
+      <dt>目標の振り返りをします</dt>
+      <dd>目標の報告シートを作成できます。目標の中で決めた３つの方針に対して達成度を付け自己評価をします。</dd>
+    </dl>
 
-## About Laravel
+### 本番環境
+http://foot-print.net/
+  <div>ログイン情報(テストアカウント)
+  + test_user01@test.com
+  + tEst@UsEr995
+  </div>		
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 制作背景
+<div>
+仕事で自分の立てた目標に対して、達成するために何が必要なのかどこまで進んでいるのか不明瞭である課題を解消するために製作しました。
+</div>
+<div>
+    また目標に対して定期的に評価をして、自分が過去どんな評価をしているか振り返りたいこともあり振り返り機能も実装しました。
+</div>					
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### DEMO
+<div>ログイン後(もしくは会員登録後)目標を設定することができます</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![FootPrints](public/image/goalimage.png)
 
-## Learning Laravel
+<div>個人の目標ではゴール名の他、達成するための３つの方針(方針事に自身度を付ける)・期日を付けることができます</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![FootPrints](public/image/goalcontent.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<div>右上の「ゴールまでの足跡」リンクをクリック後、個人の目標に対して「足跡を追加する」でタスクを追加できます</div>
 
-## Laravel Sponsors
+![FootPrints](public/image/taskimage.png)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<div>「足跡一覧」にて作成したタスクを管理することができます</div>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+![FootPrints](public/image/taskkanri.png)
 
-## Contributing
+<div>「振り返りシートを作成する」にて作成した目標に対しての評価をすることができます</div>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![FootPrints](public/image/report.png)
 
-## Code of Conduct
+<div>振り返りシートでは目標に対しての達成度や、報告コメントを作成できます</div>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![FootPrints](public/image/reportcontent.png)
 
-## Security Vulnerabilities
+### 工夫したポイント					
+<div>以下機能について工夫しました。
+<dl>
+  <dt>足跡タスク完了機能</dt>
+  <dd>タスクとタスク完了のテーブルを分けて、完了したかどうかを判断させるのに工夫を凝らしました。複数のタスクの中からタスク完了テーブルと紐づくタスクを判断させるために、foreachでタスクを一つずつ出力した後foreachの中で完了テーブルがgetできるか判断する条件文を付けることで解消しました。</dd>
+  <dt>報告機能(フロント部分)</dt>
+  <dd>過去の振り返りシートをクリックすると、クリックした特定のモーダル画面を出すようにするのに工夫を凝らしました。モーダル画面はbootstrap4で実装しているため、仕様上一つしか出せないようになっています(どのボタンを押しても初めの報告内容しか出てこない)。そのためforeachで出した報告情報(id)をモーダルのidにすることでモーダルを複数出せるように解消しました。</dd>
+</dl>
+</div>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 使用技術(開発環境)
+<dl>
+  <dt>フロント</dt>
+  <dd>html css javascript jquery bootstrap(4.3.1)</dd>
+  <dt>バックエンド</dt>
+  <dd>php(7.4.16) Laravel(6.20.8)</dd>
+  <dt>インフラ</dt>
+  <dd>AWS(EC2/RDS/Route53) Nginx phpfpm</dd>
+</dl>
 
-## License
+### 課題や今後実装したい機能
+<div>以下機能を実装したいです</div>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
++ SSH化
++ AWS(ECS/ECR)導入 			
++ 目標の残り日数機能
++ 個人の足跡タスク消化率機能
++ 足跡タスクの期限切れ表示機能
+
+### DB設計
+#### users テーブル
+##### ユーザ情報
+| Column   | Type   | Options                |
+| -------- | ------ | ---------------------- |
+| name     | string | null:false             |
+| email    | string | null:false,unipue:true |
+| password | string | null:false             |
+
+#### users_Association
+- has_one :ideal
+- has_many :futures
+- has_one :index_content
+- has_many :dones
+- has_many :report_contents
+- has_one :company
+- has_one :team
+
+#### ideals テーブル
+##### 個人目標情報
+| Column      | Type       | Options    |
+| ----------- | ---------- | ---------- |
+| user_id     | integer    | null:false |
+| title       | string     | null:false |
+| limit       | date       | null:false |
+| declaration | date       | null:false |
+| user        | references |            |
+
+#### ideals_Association
+- belongs_to :user
+
+#### futures テーブル
+##### 足跡タスク情報
+| Column      | Type       | Options    |
+| ----------- | ---------- | ---------- |
+| user_id     | integer    | null:false |
+| title       | string     | null:false |
+| detail      | string     | null:false |
+| limit       | date       | null:false |
+| user        | references |            |
+
+#### futures_Association
+- has_many :dones
+
+#### index_contentsテーブル
+##### 個人目標3つの方針情報
+| Column   | Type       | Options    |
+| -------- | ---------- | ---------- |
+| user_id  | integer    | null:false |
+| content1 | string     | null:false |
+| content2 | string     | null:false |
+| content3 | string     | null:false |
+| user     | references |            |
+
+#### index_contents_Association
+- has_many :dones
+
+#### index_statusesテーブル
+##### 個人目標3つの方針自身度情報
+| Column           | Type       | Options    |
+| ---------------- | ---------- | ---------- |
+| user_id          | integer    | null:false |
+| index_content_id | integer    | null:false |
+| status1          | string     | null:false |
+| status2          | string     | null:false |
+| status3          | string     | null:false |
+| user             | references |            |
+| index_content    | references |            |
+
+#### index_statuses_Association
+- belongs_to :index_content
+
+#### donesテーブル
+##### 足跡タスク完了情報
+| Column    | Type       | Options    |
+| --------- | ---------- | ---------- |
+| user_id   | integer    | null:false |
+| future_id | integer    | null:false |
+| user      | references |            |
+| future    | references |            |
+
+#### dones_Association
+- belongs_to :user
+- belongs_to :future
+
+#### report_contentsテーブル
+##### 報告情報
+| Column      | Type       | Options    |
+| ----------- | ---------- | ---------- |
+| user_id     | integer    | null:false |
+| content1    | string     | null:false |
+| content2    | string     | null:false |
+| content3    | string     | null:false |
+| comment     | string     | null:false |
+| declaration | date       | null:false |
+| user        | references |            |
+
+#### dones_Association
+- has_many :report_statuses
+
+#### report_statusesテーブル
+##### 報告達成度情報
+| Column            | Type       | Options    |
+| ----------------- | ---------- | ---------- |
+| user_id           | integer    | null:false |
+| report_content_id | integer    | null:false |
+| status1           | string     | null:false |
+| status2           | string     | null:false |
+| status3           | string     | null:false |
+| user              | references |            |
+| report_content    | references |            |
+
+#### index_statuses_Association
+- belongs_to :report_content
+
+#### copanies テーブル
+##### 会社目標情報
+| Column      | Type       | Options    |
+| ----------- | ---------- | ---------- |
+| user_id     | integer    | null:false |
+| title       | string     | null:false |
+| user        | references |            |
+
+#### ideals_Association
+- belongs_to :user
+
+#### teams テーブル
+##### チーム目標情報
+| Column      | Type       | Options    |
+| ----------- | ---------- | ---------- |
+| user_id     | integer    | null:false |
+| title       | string     | null:false |
+| user        | references |            |
+
+#### ideals_Association
+- belongs_to :user
