@@ -16,8 +16,11 @@
 ### 本番環境
 http://foot-print.net/
   <div>ログイン情報(テストアカウント)
-  + test_user01@test.com
-  + tEst@UsEr995
+
++ test_user01@test.com
+
++ tEst@UsEr995
+
   </div>		
 
 ### 制作背景
@@ -70,7 +73,7 @@ http://foot-print.net/
   <dt>バックエンド</dt>
   <dd>php(7.4.16) Laravel(6.20.8)</dd>
   <dt>インフラ</dt>
-  <dd>AWS(EC2/RDS/Route53) Nginx phpfpm</dd>
+  <dd>AWS(EC2/RDS(mysql)/Route53) Nginx phpfpm</dd>
 </dl>
 
 ### 課題や今後実装したい機能

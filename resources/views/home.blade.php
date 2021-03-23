@@ -41,8 +41,8 @@
           <div class="card-body">
           <h4>個人目標:</h4>
           <p>個人のゴールを設定してください。</p>
-          </div>
           <a href="{{ route('ideals.create') }}" class="btn btn-danger mb-3" >ゴールを設定する</a>
+          </div>
           @else
           <div class="card-body">
           <h4>個人目標：</h4>
