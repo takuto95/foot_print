@@ -27,7 +27,7 @@
                 </div>
             </form>
             <div class="text-center">
-                <a href="{{ route('password.request') }}">パスワードの変更はこちらから</a>
+                <a href="#">パスワードの変更はこちらから</a>
             </div>
         </div>
     @endsection
