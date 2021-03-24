@@ -26,7 +26,7 @@ class EditFuture extends FormRequest
         return [
             'title' => 'required',
             'detail' => 'required',
-            'limit' => 'required',
+            'due_date' => 'required',
         ];
     }
 
@@ -34,7 +34,7 @@ class EditFuture extends FormRequest
         return[
             'title' => 'タイトル',
             'detail' => '詳細',
-            'limit' => '期限日',
+            'due_date' => '期限日',
         ];
     }
 }

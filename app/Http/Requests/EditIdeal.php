@@ -25,7 +25,7 @@ class EditIdeal extends FormRequest
     {
         return [
             'title' => 'required',
-            'limit' => 'required',
+            'due_date' => 'required',
             'content1' => 'required',
             'content2' => 'required',
             'content3' => 'required',
@@ -35,7 +35,7 @@ class EditIdeal extends FormRequest
     public function attributes(){
         return[
             'title' => 'タイトル',
-            'limit' => '期限日',
+            'due_date' => '期限日',
             'content1' => '方針①',
             'content2' => '方針②',
             'content3' => '方針③',
