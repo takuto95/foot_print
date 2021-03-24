@@ -17,9 +17,9 @@
 http://foot-print.net/
   <div>ログイン情報(テストアカウント)
 
-+ test_user01@test.com
++ testuser02@test.com
 
-+ tEst@UsEr995
++ testUser995
 
   </div>		
 
