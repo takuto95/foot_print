@@ -52,7 +52,7 @@ class IdealController extends Controller
     {
         $ideal = Auth::user()->ideals()->first();
         $index = Auth::user()->index_contents()->first();
-        $status = Auth::user()->index_statuses()->first();
+        $status = $index->index_statuses()->first();
 
         $index->content1 = $request->content1;
         $index->content2 = $request->content2;
